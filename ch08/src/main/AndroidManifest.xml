@@ -10,8 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
 <!--        <activity-->
-<!--            android:name=".BaseAdapterActivity"-->
+<!--            android:name=".GridViewActivity"-->
 <!--            android:exported="false" />-->
+        <!-- <activity -->
+        <!-- android:name=".ListFocusActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".ListViewActivity" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".BaseAdapterActivity" -->
+        <!-- android:exported="false" /> -->
         <!-- <activity -->
         <!-- android:name=".SpinnerIconActivity" -->
         <!-- android:exported="false" /> -->
@@ -19,11 +28,10 @@
         <!-- android:name=".SpinnerDropdownActivity" -->
         <!-- android:exported="false" /> -->
         <activity
-            android:name=".BaseAdapterActivity"
+            android:name=".GridViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

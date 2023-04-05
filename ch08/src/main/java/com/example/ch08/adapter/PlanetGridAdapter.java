@@ -1,13 +1,11 @@
 package com.example.ch08.adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.ch08.R;
@@ -15,12 +13,12 @@ import com.example.ch08.entity.Planet;
 
 import java.util.List;
 
-public class PlanetBaseAdapter extends BaseAdapter {
+public class PlanetGridAdapter extends BaseAdapter {
 
     private Context mContext;
     private List<Planet> mPlaneList;
 
-    public PlanetBaseAdapter(Context mContext, List<Planet> mPlaneList) {
+    public PlanetGridAdapter(Context mContext, List<Planet> mPlaneList) {
         this.mContext = mContext;
         this.mPlaneList = mPlaneList;
     }
@@ -46,7 +44,7 @@ public class PlanetBaseAdapter extends BaseAdapter {
         ViewHolder holder;
         if (convertView == null){
             // 根据布局文件item_list.xml生成转换视图对象
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_list, null);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_grid, null);
             holder = new ViewHolder();
             holder.iv_icon = convertView.findViewById(R.id.iv_icon);
             holder.tv_name = convertView.findViewById(R.id.tv_name);
